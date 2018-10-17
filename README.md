@@ -124,11 +124,11 @@ var b = 0
 ```
 
 **What might these lines do?**
-
+it creates three variables and sets numbers 
 **What happens if you change the numbers?**
-
+the colour of the box changes
 **What numbers are allowed / What numbers have an effect?**
-
+Positive numbers up to 255
 Look at this line:
 
 ```js
@@ -136,15 +136,16 @@ createCanvas(400, 400)
 ```
 
 **What does createCanvas do?**
-
+it determines the size of the shape
 **What happens if you change the numbers?**
-
+first number changes the width, second number changes the height
 **What numbers are allowed/what numbers have an effect?**
-
+Negative numbers make the shape disappear, but you can use any positive number
 **What happens if you add/remove a number?**
+removing a number gets rid of the shape, adding a numbe changes nothing
 
 **Can you guess what the `function setup() {` part does? What happens if you
-change the name of setup?**
+change the name of setup?** 
 
 Look at this line:
 
@@ -153,14 +154,15 @@ background(r, g, b)
 ```
 
 **What does background do?**
+The background sets the colour of the shape according to the values stored in the variables r,g and b.
 
 **What happens if you change the order of the letters in background? What does
 this tell you about how the computer uses them?**
-
+This will change the colour. The computer does not associate a variable name with a type of input, so it just takes it in standard rgb order. 
 **What happens if you change the number of letters?**
-
+The colour of the box turns grey
 **What happens if you change the letters for different ones?**
-
+It gets rid of the box because there is no variables set up unde rthe new letters. The letters of the variables can be changed and not make any difference.
 # Sketch B
 
 Open the `part-b` sketch in your browser, and open `part-b/sketch.js` in your
@@ -185,7 +187,7 @@ function setup() {
 **What does setup do?**
 
 **What do `{` `}` mean? What happens if you remove one?**
-
+The Square dissapears. 
 **What do the numbers in `background(0, 0, 0)` do? What happens when you change
 them? How is this different from Sketch A?**
 
@@ -207,12 +209,12 @@ fill(255, 0, 0)
 ```
 
 **What do these numbers do? What happens when you change them?**
-
+changes the colour of the circles
 **What does fill mean? What happens if you change it to stroke?**
-
+the colours in fill set the colour of the whole circle, whereas with stroke, it sets the colour of the outline.
 **What happens if you remove (or comment out) this line? What about if you
 include both fill and stroke on seperate lines?**
-
+if yo include both on different lines it sets the fill colour and the outline colour
 Now look at this line:
 
 ```js
@@ -220,11 +222,11 @@ ellipse(mouseX, mouseY, 30, 30)
 ```
 
 **What does `ellipse` do?**
-
+ creates a shape at your current mouse position with a height and width as specified in the parentesis
 **What happens if you change the numbers?**
-
+it changed the shape of the circle. You can make it taller or fatter (oval)
 **What do `mouseX` and `mouseY` mean?**
-
+It is the mouse position X and Y value as if the canvas shape is a table/grid 
 **What happens if you change the order of the items between the `(` `)`?**
 
 ---
@@ -255,15 +257,17 @@ if (mouseIsPressed) {
 ```
 
 **What does `mouseIsPressed` mean?**
-
-**What happens if you change `mouseIsPressed` to `keyIsPressed`?** You’ll need
+When the left button is clicked. 
+**What happens if you change `mouseIsPressed` to `keyIsPressed`?** 
+it changes the control to a key, so you can press any key to change the colour.
+You’ll need
 to click on the sketch so it registers keyboard events – use the ctrl key if you
 have issues with the keyboard.
 
 **What does if / else do?**
-
+this gives the code a pathway
 **What happens if you remove the { } or ( )? Why?**
-
+the code doesnt work 
 **What happens if you change 255 to mouseX ? Why?**
 
 **Remove the outline of the circle. Use Google and the P5.js reference to help
